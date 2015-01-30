@@ -1,0 +1,188 @@
+.main-navigation {
+	clear			: both;
+	display			: block;
+	padding 		: 0 1em;
+	margin-bottom 	: 10px;
+
+	ul {
+		list-style		: none;
+		margin			: 0;
+		padding-left	: 0;
+		display 		: none;
+		background-color: $purple;
+
+		@media only screen and (min-width: $bp__menu-button+1) {
+			display 	: block;
+		}
+
+		ul {
+			display		: inherit;
+			background	: $color__bg-menu-item-mobile;
+
+			@media only screen and (min-width: $bp__menu-button+1) {
+				box-shadow	: 0 3px 3px rgba(0, 0, 0, 0.2);
+				float		: left;
+				position	: absolute;
+				top			: 2.5em;
+				left		: -999em;
+				z-index		: 99999;
+
+				ul {
+					left: -999em;
+					top	: 0;
+				}
+
+				li {
+					&:hover > ul {
+						left: 100%;
+					}
+				}
+
+				a {
+					color: $color__text-submenu;
+				}
+			} // breakpoint
+
+			ul {
+				a {
+					@media only screen and (max-width: $bp__menu-button) {
+						padding: 0.5em 3em;
+						border-left: none;
+					}
+				}
+			}
+
+			a {
+				@media only screen and (max-width: $bp__menu-button) {
+					padding: 0.5em 2em;
+				}
+
+				@media only screen and (min-width: $bp__menu-button+1) {
+					width: 200px;
+				}
+			}
+
+			@media only screen and (max-width: $bp__menu-button) {
+				li {
+
+					&:last-child {
+						padding-bottom: 0;
+					}
+				}
+			}
+		} // .submenu ul
+
+		li:hover > ul {
+			left: 0;
+		}
+	} // first-level ul
+
+	li {
+		padding 	: 14px;
+		box-sizing 	: border-box;
+
+		&:hover > a {
+			background 	: $color__bg-menu-item-mobile;
+			color 		: $color__text-menu-mobile-hover;
+
+			@media only screen and (min-width: $bp__menu-button+1) {
+				color 	: $color__text-menu-hover;
+			}
+		}
+
+		@media only screen and (min-width: $bp__min+1) {
+			display : inline-block;
+			width 	: 49%;
+		}
+
+		@media only screen and (min-width: $bp__sidebar+1) {
+			width 	: 32%;
+		}
+
+		@media only screen and (min-width: $bp__max) {
+			width: initial;
+
+			&:hover > ul {
+				display: block;
+			}
+		}
+	}
+	a {
+		padding 		: 0.5em 1em;
+		display			: block;
+		text-decoration	: none;
+		color 			: $color__text-menu-mobile;
+		text-transform 	: uppercase;
+		transition 		: all 0.3s ease-in-out;
+
+		@media only screen and (min-width: $bp__max) {
+			color 		: $color__text-menu;
+			font-size 	: $font__size-norm;
+			padding 	: 0 0.5em;
+		}
+	}
+
+	.current_page_item,
+	.current-menu-item,
+	.current-menu-parent,
+	.current_page_ancestor {
+		background: $color__bg-menu-current;
+
+		> a {
+			color: $color__text-menu-current;
+		}
+
+		&:hover > a {
+			color: $color__text-menu-current-hover;
+		}
+	}
+
+	&.toggled {
+
+		.nav-menu {
+			@include menutoggle();
+			margin-bottom 	: 0;
+			font-size 		: 1.25em;
+		}
+	}
+} // .main-navigation
+
+// Center Menu
+.menu-primary-menu-container {
+	max-width	: $size__max-width;
+	margin		: 0 auto;
+	text-align	: center;
+}
+
+.menu-toggle {
+	@include menutoggle();
+	font-size: 2em;
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		display 	: none;
+		background 	: $color__bg-menu-button;
+		color 		: $color__text-menu-button;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	margin	: 0 0 $size__default-bot-marg;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float	: left;
+	width	: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float		: right;
+	text-align	: right;
+	width		: 50%;
+}

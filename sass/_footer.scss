@@ -1,0 +1,186 @@
+.cs_footer {
+	overflow 			: auto;
+	background-color 	: $purple;
+	padding 			: 1em;
+	text-align 			: center;
+	color 				: $light;
+	font-family 		: $lucy;
+
+	@media only screen and (min-width: $bp__min+1) {
+		text-align 			: left;
+	}
+
+	@media only screen and (min-width: $bp__header+1) {
+		background-image 	: url(images/bg_ftr_vl.jpg);
+		background-position : top;
+		background-repeat 	: no-repeat;
+		background-size 	: cover;
+		padding 			: 2em 1em 1em;
+	}
+
+	input {
+		color 			: $med;
+		padding 		: 2px;
+		font-family 	: $lucy;
+	}
+
+	a {
+		color 	: $light;
+	}
+}
+
+.footerwidget {
+	font-size 		: $font__size-small;
+	margin 			: 2em auto;
+	box-sizing 		: border-box;
+
+	@media only screen and (min-width: $bp__min+1) {
+		width 			: 49%;
+		min-height 		: 170px;
+		display 		: inline-block;
+		vertical-align 	: top;
+	}
+
+	@media only screen and (min-width: $bp__header+1) {
+		border-right 	: 1px solid $light;
+		padding 		: 0 1em;
+		min-height 		: 190px;
+		width 			: 25%;
+	}
+
+	@media only screen and (min-width: $bp__sidebar+1) {
+		width 			: 18%;
+	}
+
+	.widget-title {
+		margin-bottom 	: 12px;
+		font-family 	: $trajan;
+		font-size 		: $font__size-small;
+		text-transform 	: uppercase;
+	}
+
+	h3 {
+		font-size 		: $font__size-tiny;
+	}
+
+	h4 {
+		font-size 		: $font__size-tiny;
+		font-weight 	: normal;
+		font-style 		: italic;
+		margin-bottom 	: 10px;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		font-size 		: $font__size-tiny;
+		line-height 	: 1.4em;
+	}
+
+	.widget_text {
+		margin-bottom: 12px;
+	}
+}
+
+.textwidget {
+	font-size 		: $font__size-tiny;
+	line-height 	: 1.4em;
+}
+
+#footer1 {
+	font-family 	: $trajan;
+
+	@media only screen and (min-width: $bp__max) {
+		padding 		: 0 !important;
+		width 			: 20%;
+	}
+
+	ul {
+		list-style 		: none;
+
+		a {
+			text-transform 	: uppercase;
+			font-size 		: $font__size-small;
+			line-height 	: 2em;
+		}
+	}
+}
+
+#footer2 {
+	@media only screen and (min-width: $bp__max) {
+		width: 22%;
+	}
+}
+
+#footer4 {
+	@media only screen and (min-width: $bp__header+1) {
+		border-right 	: none;
+	}
+
+	@media only screen and (min-width: $bp__sidebar+1) {
+		border-right 	: 1px solid $light;
+	}
+}
+
+#footer5 {
+	border-right: none;
+	text-align 	: center;
+
+	@media only screen and (min-width: $bp__min+1) {
+		display 	: block;
+		min-height 	: 100px;
+	}
+
+	@media only screen and (min-width: $bp__sidebar+1) {
+		display 	: inline-block;
+		text-align 	: left;
+	}
+}
+
+.directionslink {
+	text-decoration: underline !important;
+}
+
+.credits {
+	font-size 		: $font__size-micro;
+	padding 		: 1em;
+	font-style 		: italic;
+
+	@media only screen and (min-width: $bp__min+1) {
+		float: left;
+	}
+}
+
+.copyright {
+	font-size 		: $font__size-micro;
+	padding 		: 1em;
+
+	@media only screen and (min-width: $bp__min+1) {
+		float: right;
+	}
+}
+
+.accessimg {
+	@include sprite( 71px, 37px, -86px -5px );
+	margin: 0 auto;
+
+	@media only screen and (min-width: $bp__min+1) {
+		float: right;
+		margin: 0;
+	}
+}
+
+.logo_ftr_cl {
+	@include sprite( 102px, 39px, -175px -148px );
+	margin: 0 auto;
+
+	@media only screen and (min-width: $bp__min+1) {
+		margin: 0;
+	}
+}
+
+.question {
+	color 			: $lightblue;
+}

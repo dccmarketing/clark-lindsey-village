@@ -1,0 +1,182 @@
+/*  [[  Header  ]]  */
+.header {
+	position 		: relative;
+	margin 			: 0 auto;
+	font-family 	: $trajan;
+	font-size 		: $font__size-tiny;
+	color 			: $brown;
+	padding 		: 1em 0;
+	text-align 		: center;
+
+	@media only screen and (min-width: $bp__logo+1) {
+		text-align 		: inherit;
+		padding-top 	: 2em;
+	}
+}
+
+.logo {
+
+	@media only screen and (min-width: $bp__logo+1) {
+		float 		: left;
+	}
+
+	@media only screen and (min-width: $bp__header+1) {
+		width 		: 60%;
+		text-align 	: inherit;
+	}
+}
+
+.logolink {
+	//@include sprite( 358px, 92px, -5px -410px );
+	margin: 0 auto;
+
+	@media only screen and (min-width: $bp__header+1) {
+		margin: inherit;
+	}
+}
+
+.description {
+	text-transform 	: uppercase;
+	font-family 	: $lato;
+	font-size 		: 16px;
+	letter-spacing 	: 5px;
+	display 		: none;
+	margin 			: 1em 0;
+
+	@media only screen and (min-width: $bp__logo+1) {
+		display 	: block;
+		float 		: left;
+		width 		: 100%;
+		text-align 	: center;
+	}
+
+	@media only screen and (min-width: $bp__header+1) {
+		text-align 	: inherit;
+		width 		: 40%;
+	}
+
+	@media only screen and (min-width: $bp__tagline+1) {
+		width 		: inherit;
+	}
+
+	&.mobile {
+		display: block;
+
+		@media only screen and (min-width: $bp__logo+1) {
+			display: none;
+		}
+	}
+}
+
+.cs_logos {
+	position 		: relative;
+	margin-top 		: 1em;
+
+	@media only screen and (min-width: $bp__logo+1) {
+		float 			: right;
+		margin-top 		: 0.5em;
+	}
+
+	li {
+		list-style 		: none;
+		display 		: inline-block;
+		vertical-align 	: top;
+	}
+}
+
+.logo_cl_med {
+	@include sprite( 160px, 56px, -5px -148px );
+	margin: 0 auto;
+
+	@media only screen and (min-width: $bp__logos+1) {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+.logo_vl_small {
+	@include sprite( 85px, 56px, -505px -100px );
+}
+
+.logo_mb_small {
+	@include sprite( 85px, 56px, -385px -182px );
+}
+
+.logo_rn_small {
+	@include sprite( 85px, 56px, -410px -100px );
+}
+
+.logo_vl_med {
+	@include sprite( 113px, 85px, -480px -166px );
+}
+
+.logo_mb_med {
+	@include sprite( 113px, 85px, -5px -312px );
+}
+
+.logo_rn_med {
+	@include sprite( 113px, 85px, -467px -5px );
+}
+
+.othersmall {
+	display: inline-block;
+}
+
+.header_links {
+	position 		: relative;
+	padding 		: 1em;
+	vertical-align 	: top;
+	font-size 		: $font__size-small;
+	display 		: none;
+
+	@media only screen and (min-width: $bp__header+1) {
+		display 	: inherit;
+		float 		: right;
+		padding 	: 3px;
+	}
+
+	a {
+		color 			: $brown;
+		text-decoration : none;
+		text-transform 	: uppercase;
+
+		&:hover {
+			color 		: $green;
+		}
+	}
+
+	.menu {
+		display: inline-block;
+	}
+
+	.menu-items {
+		list-style: none;
+	}
+
+	.menu-item {
+		display 	: inline-block;
+		border-right: 1px solid $brown;
+		padding 	: 0 8px 0 4px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			border-right: none;
+			padding-right: 0;
+		}
+	}
+
+	.facebook {
+		margin: 5px 0;
+		@include sprite( 100px, 24px, -287px -148px );
+	}
+}
+
+.fontsize {
+	display: inline-block;
+	margin-right: 1.5em;
+}
+
+

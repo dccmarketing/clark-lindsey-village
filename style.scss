@@ -1,0 +1,238 @@
+/*
+Theme Name: Clark-Lindsey - Village
+Theme URI: http://www.cl-village.com
+Description:
+Author: DCC Marketing
+Author URI: http://www.dccmarketing.com
+Version: 1.0
+*/
+
+/*!
+Theme Name: Clark-Lindsey - Village
+Theme URI: http://cl-village.com
+Author: DCC Marketing
+Author URI: http://dccmarketing.com/
+Description: Custom WordPress theme for Clark-Lindsey Village
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: clark-lindsey
+Tags:
+*/
+
+@import "sass/vars";
+@import "sass/mixins";
+@import "sass/menus";
+@import "sass/header";
+@import "sass/sidebar";
+@import "sass/footer";
+@import "sass/home";
+@import "sass/subnav";
+
+body {
+	margin 			: 0;
+	background-color: $lavender;
+}
+
+h1, h2, h3, h4, p, ul, ol, img, form {
+	margin 			: 0;
+	padding  		: 0;
+	vertical-align 	: top;
+}
+
+.alignleft,
+img.alignleft {
+	display 		: inline;
+	float 			: left;
+	margin 			: 4px 24px 12px 0;
+}
+
+.alignright,
+img.alignright {
+	display 		: inline;
+	float 			: right;
+	margin 			: 4px 0 12px 24px;
+}
+
+.aligncenter,
+img.aligncenter {
+	clear 			: both;
+	display 		: block;
+	margin 			: 4px auto 12px;
+}
+
+a {
+	color 			: $green;
+	text-decoration : none;
+
+	&:hover {
+		color 		: $brown;
+	}
+}
+
+div.main_container {
+	margin-left 	: auto;
+	margin-right 	: auto;
+	max-width 		: $size__max-width;
+	background 		: $light;
+}
+
+.container {
+	margin-left 	: auto;
+	margin-right 	: auto;
+	padding 		: 0 16px;
+}
+
+/*  [[  Content  ]]  */
+div.cs_content {
+	position 		: relative;
+	margin-left 	: auto;
+	margin-right 	: auto;
+}
+
+div.cs_left {
+	position 		: relative;
+	min-height 		: 600px;
+	height 			: auto !important;
+	height 			: 600px;
+	font-family 	: $lucy;
+	font-size 		: $font__size-tiny;
+	color 			: $brown;
+
+	@media only screen and (min-width: $bp__sidebar+1) {
+		float 			: left;
+		width 			: $size__content-width;
+		border-right 	: 2px solid $darkgreen;
+		padding-right 	: 10px;
+	}
+
+	h1 {
+		font-family 	: $trajan;
+		font-size 		: $font__size-large;
+		margin-bottom 	: 1em;
+	}
+
+	h2 {
+		font-family 	: $trajan;
+		font-size 		: $font__size-med;
+		margin-bottom 	: 1em;
+	}
+
+	h3 {
+		font-family 	: $trajan;
+		font-size 		: $font__size-subnorm;
+		margin-bottom 	: 1em;
+	}
+
+	p {
+		padding 		: 0;
+		margin-bottom 	: 1em;
+		line-height 	: 1.6em;
+		font-family 	: $lucy;
+	}
+
+	ul,
+	ol {
+		margin-left 	: 2em;
+		line-height 	: 1.6em;
+	}
+
+	img,
+	figure {
+
+		@media only screen and (max-width: $bp__helpcenter) {
+			width 		: 100%;
+			height 		: auto;
+			max-width 	: 400px;
+			display 	: block;
+			float 		: none;
+			margin 		: 0 auto;
+		}
+	}
+
+	article.post {
+		margin-bottom: 50px;
+	}
+}
+
+.article_image_single {
+	width: 100%;
+}
+
+table,
+td {
+	vertical-align 	: top;
+}
+
+div.cs_lf {
+	margin-top 		: 10px;
+}
+
+
+
+ul.cs_archive_list {
+	position 		: relative;
+	float 			: left;
+	margin-top 		: 20px;
+	text-align 		: right;
+	font-family 	: $lucy;
+	font-size 		: $font__size-tiny;
+	font-weight 	: bold;
+
+	li {
+		list-style 		: none;
+		line-height 	: 1.8em;
+	}
+}
+
+.cs_archive_list li a:link, .cs_archive_list li a:visited {
+	text-decoration 	: none;
+	color 				: $green;
+}
+
+.entry-meta {
+
+	@media only screen and (min-width: $bp__helpcenter+1) {
+		width 		: 49%;
+		float 		: left;
+	}
+}
+
+.entry-footer {
+
+	@media only screen and (min-width: $bp__helpcenter+1) {
+		width 		: 49%;
+		float 		: right;
+		text-align 	: right;
+	}
+}
+
+.cat-links,
+.edit-link,
+.comments-link {
+	margin-right: 1.5em;
+}
+
+
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip 		: rect(1px, 1px, 1px, 1px);
+	position 	: absolute !important;
+	height 		: 1px;
+	width 		: 1px;
+	overflow 	: hidden;
+}
+
+.readmore {
+	background 			: $lavender;
+	padding 			: 4px;
+	border 				: 1px solid $tan;
+	border-radius 		: 5px;
+	text-shadow 		: 2px 2px 2px $medgray;
+	margin-bottom 		: 8px;
+}
+
+.question {
+	color 			: $lightblue;
+}

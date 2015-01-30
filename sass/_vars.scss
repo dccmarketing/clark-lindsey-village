@@ -1,0 +1,67 @@
+$light			: #fff;
+$med			: #ccc;
+$dark			: #020202;
+$trans 			: transparent;
+$mintgreen 		: #b9cba2;
+$green 			: #5c8727;
+$brown 			: #5a471b;
+$black 			: #000;
+$darkgreen 		: #84a55c;
+$lightblue 		: #88B3DA;
+$lightgreen 	: #d6e0c7;
+$tan 			: #aca38d;
+$medgray 		: #666;
+$lavender 		: #c3c5d7;
+$olivebrown 	: #54471b;
+$lightgray 		: #ddd;
+$purple 		: #9194b6;
+
+$lucy 				: "PT Sans", sans-serif;
+$trajan 			: "Cinzel", serif;
+$lato 				: 'Lato', sans-serif;
+
+$font__size-micro 	: 10px;
+$font__size-tiny 	: 13px;
+$font__size-small 	: 14px;
+$font__size-subnorm : 15px;
+$font__size-norm 	: 16px;
+$font__size-med 	: 18px;
+$font__size-large 	: 23px;
+
+
+$size__max-width 		: 1000px;
+$size__default-bot-marg : 1.5em;
+$size__content-width 	: 74.25%;
+$size__sidebar-width 	: 23%;
+
+// Menu
+$color__text-menu-mobile 		: $light;
+$color__text-submenu 			: $light;
+$color__text-menu-mobile-hover 	: $black;
+$color__text-menu-hover 		: $black;
+$color__text-menu-mobile 		: $light;
+$color__text-menu 				: $light;
+$color__text-menu-current 		: $black;
+$color__text-menu-current-hover : $black;
+$color__text-menu-button 		: $light;
+$color__text-menu-button-mobile : $light;
+
+$color__bg-menu-current 		: $trans;
+$color__bg-menu-item-mobile 	: $trans;
+$color__bg-menu-button 			: $purple;
+$color__bg-menu-button-mobile 	: $purple;
+
+
+
+// Breakpoints
+$bp__logos 			: 400px;
+$bp__min 			: 600px;
+$bp__menu-button 	: 700px;
+$bp__logo 			: 750px;
+$bp__helpcenter 	: 675px;
+$bp__header 		: 800px;
+$bp__sidebar 		: 850px;
+$bp__tagline 		: 925px;
+$bp__max 			: 1000px;
+
+

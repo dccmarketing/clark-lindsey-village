@@ -1,0 +1,150 @@
+.sidebar {
+	box-sizing 	: border-box;
+	margin-left : 10px;
+	color 		: $brown;
+	font-family : $lucy;
+
+	@media only screen and (min-width: $bp__sidebar+1) {
+		width 		: $size__sidebar-width;
+		float 		: right;
+	}
+
+	a {
+		color 			: $brown;
+		text-decoration : none;
+		font-weight 	: bold;
+
+		&:hover {
+			color 		: $green;
+		}
+	}
+
+	.widget-title {
+		display: none;
+	}
+
+	.widget_text {
+		margin 				: 12px auto 0;
+		background-repeat 	: no-repeat;
+		background-position : left top;
+		background-image 	: url( images/icon_hc_address.jpg );
+		width 				: 222px;
+	}
+
+	.tellink {
+		font-weight: normal !important;
+	}
+
+	.addresslink {
+		margin-bottom: 5px;
+	}
+
+	.textwidget {
+		padding-left: 50px;
+
+		&:before {
+			width: 50px;
+		}
+
+		p {
+			min-height: 18px;
+		}
+	}
+
+	.helpcenterheader {
+		text-align 		: center;
+		font-family 	: $trajan;
+		border-top 		: 1px solid $brown;
+		border-bottom 	: 1px solid $brown;
+		padding 		: 5px 0;
+
+		span {
+			background-color: $brown;
+			color 			: $light;
+			padding 		: 5px 0;
+			display 		: block;
+			font-weight 	: normal;
+			font-size 		: $font__size-large;
+		}
+	}
+
+}
+
+.nav-helpcenter {
+
+	.menu-items {
+		list-style: none;
+	}
+
+	.menu-item {
+		height 		: 75px;
+
+		@media only screen and (min-width: $bp__min+1) {
+			display 	: inline-block;
+			width 		: 49%;
+		}
+
+		@media only screen and (min-width: $bp__helpcenter+1) {
+			width 		: 32.33%;
+		}
+
+		@media only screen and (min-width: $bp__sidebar+1) {
+			width 	: 100%;
+			height 	: initial;
+		}
+	}
+
+	.icon-menu {
+		padding-left: 25%;
+
+		@media only screen and (min-width: $bp__min+1) {
+			padding-left: 0;
+		}
+	}
+
+	.menuicon {
+		width 		: 50px;
+		transform 	: translateY(25%);
+		display 	: inline-block !important;
+	}
+
+	.icon_hc_brochure {
+		@include sprite( 50px, 36px, -167px -5px );
+	}
+
+	.icon_hc_call {
+		@include sprite( 50px, 34px, -227px -5px );
+	}
+
+	.icon_hc_email {
+		@include sprite( 50px, 29px, -287px -5px );
+	}
+
+	.icon_hc_faq {
+		@include sprite( 50px, 33px, -347px -5px );
+	}
+
+	.icon_hc_news {
+		@include sprite( 50px, 38px, -407px -5px );
+	}
+
+	.icon_hc_photo {
+		@include sprite( 50px, 35px, -5px -53px );
+	}
+
+	.icon_hc_tour {
+		@include sprite( 50px, 27px, -65px -53px );
+	}
+
+	.icon_hc_video {
+		@include sprite( 50px, 38px, -125px -53px );
+	}
+
+	.hc-title {
+		font-size 			: $font__size-tiny;
+		background-repeat 	: no-repeat;
+		background-position : left center;
+		line-height 		: 50px;
+		display 			: inline-block;
+	}
+}

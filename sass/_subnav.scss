@@ -1,0 +1,56 @@
+/*  [[  Sub page navigation  ]]  */
+.subnav {
+	background-color 	: $lavender;
+	margin-bottom 		: 1.5em;
+
+	.menu {
+		margin: 0;
+	}
+
+	.sub-menu {
+		list-style: none;
+		margin-left: 0.5em !important;
+	}
+
+	li {
+		display 		: inline-block;
+		width 			: 49%;
+		box-sizing 		: border-box;
+		padding 		: 1em;
+		vertical-align 	: top;
+		text-align 		: center;
+
+		@media only screen and (min-width: $bp__helpcenter+1) {
+			width 			: 32%;
+		}
+
+		@media only screen and (min-width: $bp__sidebar+1) {
+			padding : 0.25em 1em 0.25em 0;
+			width 	: initial;
+
+			&:last-child a {
+				border-right: none;
+			}
+		}
+	}
+
+	a {
+		color 			: $light;
+
+		&:hover {
+			color 		: $purple;
+		}
+
+		@media only screen and (min-width: $bp__sidebar+1) {
+			border-right 	: 1px solid $light;
+			padding-right 	: 1em;
+		}
+	}
+
+	.current_page_item {
+		a {
+			font-weight : bold;
+			color 		: $brown;
+		}
+	}
+}
