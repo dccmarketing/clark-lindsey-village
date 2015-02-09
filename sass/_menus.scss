@@ -100,7 +100,8 @@
 		}
 
 		@media only screen and (min-width: $bp__max) {
-			width: initial;
+			width 	: auto;
+			width 	: initial;
 
 			&:hover > ul {
 				display: block;

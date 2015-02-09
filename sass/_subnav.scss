@@ -26,6 +26,7 @@
 
 		@media only screen and (min-width: $bp__sidebar+1) {
 			padding : 0.25em 1em 0.25em 0;
+			width 	: auto;
 			width 	: initial;
 
 			&:last-child a {

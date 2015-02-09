@@ -61,6 +61,11 @@ img.aligncenter {
 	margin 			: 4px auto 12px;
 }
 
+img {
+	border 		: 0;
+	outline 	: none;
+}
+
 a {
 	color 			: $green;
 	text-decoration : none;
@@ -231,6 +236,9 @@ ul.cs_archive_list {
 	border-radius 		: 5px;
 	text-shadow 		: 2px 2px 2px $medgray;
 	margin-bottom 		: 8px;
+	text-align 			: center;
+	display 			: block;
+	width 				: 80px;
 }
 
 .question {
